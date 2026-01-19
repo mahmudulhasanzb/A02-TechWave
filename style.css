@@ -222,4 +222,47 @@ nav {
 }
 /* ================================================= */
 
+/* =================== */
+/* About section styles */
+/* ===================*/
+.about-container{
+  text-align: center;
+}
+
+.about-container .about-text hr{
+  opacity: 10%;
+}
+
+.about-highlights{
+  margin-top: 80px;
+  margin-bottom: 120px;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.about-highlights div h2{
+  color: var(--color-green);
+}
+/* ================================================= */
+
+/* ================= */
+/* Why Choose TechWave Releted Styles */
+/* ================= */
+#why-choose{
+  background-color: var(--primary-theme-bg);
+}
+
+.wct-inside-container{
+  padding: 120px 0px;
+}
+
+.wct-top-heading h2{
+  text-align: center;
+}
+
+ */
+.wct-card-container{
+  
+}
+
 
