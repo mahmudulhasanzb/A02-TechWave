@@ -7,9 +7,9 @@
 }
 /* -------------------------------------- */
 
-/* ==============
-shared styles
-================= */
+/* ============== */
+/* shared styles */
+/* ============== */
 * {
   margin: 0;
   padding: 0;
@@ -21,11 +21,20 @@ shared styles
   --primary-theme: #1a0b2e;
   --secondary-theme: #351165;
   --primary-theme-bg: #230e3d;
+  --color-green: #00FF88;
+}
+
+.max-width-1200px,
+.about-container
+{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .flex {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .primary-btn {
@@ -37,6 +46,32 @@ shared styles
   color: white;
   background: var(--grad1);
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.primary-btn:hover,
+.primary-btn:focus{
+  transform: scale(1.05);
+  outline: none;
+}
+
+.section-heading{
+  color:white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-description{
+  color:white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  opacity: 80%;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 /* ============================================== */
 
@@ -45,9 +80,9 @@ body {
   background-color: var(--primary-theme);
 }
 
-/* ==============
-Navigationbar styles
-================= */
+/* ============== */
+/* Navigationbar styles */
+/* ============== */
 nav {
   background-color: var(--primary-theme);
   border-bottom: 5px solid var(--secondary-theme);
@@ -91,3 +126,100 @@ nav {
   font-weight: 500;
 }
 /*=============================================*/
+
+/* /* =====================*/
+/* banner styles */
+/* ======================== */
+.image-container {
+  position: relative;
+}
+
+.banner-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gradient-circle,
+.microphone {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.gradient-circle{
+  max-width: 40%;
+}
+
+.microphone{
+  max-width: 20%;
+}
+
+/* -------------------------------------- */
+.tooltip{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(300% , -50%);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 30px;
+  color: var(--primary-theme-bg);
+  background-color: #00FF88;
+  box-shadow: 0px 0px 20px 0px #00FF88;
+  animation-name: tooltip-zoomin-out;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tooltip-zoomin-out {
+  0%{
+    transform: translate(300%, -50%) scale(1);
+  }
+  50%{
+    transform: translate(300%, -50%) scale(1.1);
+  }
+  100%{
+    transform: translate(300%, -50%) scale(1);
+  }
+}
+/* ---------------------------- */
+
+.banner-content{
+  max-width: 550px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  gap: 24px;
+  text-align: center;
+  transform: translate(0, -100%);
+}
+
+.banner-content .flex{
+  justify-content: center;
+  gap: .5rem;
+}
+
+.banner-content .section-heading{
+  font-size: 3.8rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.transparent-btn{
+  background: none;
+  color: var(--color-green);
+  border: 2px solid var(--color-green);
+}
+/* ================================================= */
+
+
