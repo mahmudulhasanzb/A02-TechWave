@@ -40,7 +40,9 @@
   justify-content: center;
 }
 
-.primary-btn {
+/* --------button styles start---------- */
+.primary-btn,
+.transparent-btn {
   border: none;
   border-radius: 30px;
   padding: 12px 20px;
@@ -56,7 +58,20 @@
 .primary-btn:focus {
   transform: scale(1.05);
   outline: none;
+  background: #00f048c3;
 }
+
+
+.transparent-btn:hover,
+.transparent-btn:focus
+ {
+  color: white;
+  transform: scale(1.06);
+  background: #351165;
+  outline: none;
+}
+/* ----------------button styles end---------------- */
+
 
 .section-heading {
   color: white;
