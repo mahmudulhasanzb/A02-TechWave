@@ -616,3 +616,95 @@ footer {
 /* ================================================= */
 /* Mobile Responsive Styles End */
 /* ================================================= */
+
+
+/* ================================= */
+/* Responsive Styles For Medium Devices like Tablets */
+/* ================================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* ========Banner Section======== */
+  .banner-bg{
+    background-size: contain;
+    height: 660px;
+  }
+
+  .tooltip {
+   top: 23%;
+   left:55%;
+   font-size: 1rem;
+  }
+
+  .banner-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  .banner-content p{
+    font-size: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .banner-content .primary-btn {
+    font-size: 1rem;
+  }
+
+  .gradient-circle{
+    max-width: 200px;
+  }
+
+  .microphone{
+    width: 50px;
+  }
+
+  /* ========About Section======== */
+  .about-container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+/* ========Featured Episodes Section======== */
+  .ep-card-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .ep-card {
+
+  } 
+
+ 
+/* ========Host Section======== */
+  .host-info-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .host-info-container .social-links{
+    justify-content: center;
+  }
+
+  .host-info-container .social-links a img {
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--secondary-theme);
+    padding: 12px;
+    border-radius: 50%;
+  }
+
+  .host-info-container .social-links a i {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+
+
+} 
