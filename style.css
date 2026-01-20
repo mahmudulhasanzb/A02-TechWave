@@ -22,6 +22,7 @@
   --secondary-theme: #351165;
   --primary-theme-bg: #230e3d;
   --color-green: #00ff88;
+  --
 }
 
 .max-width-1200px,
@@ -66,11 +67,16 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  opacity: 80%;
+  opacity: 60%;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.social-links a,
+.footer-links a{
+  text-decoration: none;
 }
 /* ============================================== */
 
@@ -362,26 +368,54 @@ nav {
   max-height: 200px;
 }
 
-.host-info{
-
-}
-
 .social-links{
   margin-top: 16px;
   display: flex;
   gap: 8px;
 }
 
-.social-links a{
-  text-decoration: none;
-}
-
 .social-links a img{
   width: 12px;
   height: 12px;
   /* background-color: var(--color-green); */
-  border: 1px solid var(--color-green);
+  border: 2px solid var(--secondary-theme);
   padding: 12px;
   border-radius: 50%;
+}
+/* ================================================= */
+
+/* ================= */
+/* Footer styles */
+/* ================= */
+footer{
+  background-image: url("assets/footer-bg.png");
+  position: relative;
+}
+
+.footer-content{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 120px 0px;
+  text-align: center;
+}
+
+.footer-links{
+  display: flex;
+  gap: 40px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+
+.footer-links a{
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.footer-links a img{
+  opacity: 100%;
+  margin-right: 8px;
 }
 /* ================================================= */
